@@ -1,4 +1,6 @@
-data Tree a = Tree a (Tree a) (Tree a)
+-- Reference:
+--   * https://tanakh.hatenablog.com/entry/20100411/p1
+--   * https://wiki.haskell.org/Memoization
 
 lookupTree :: Tree a -> Int -> a
 lookupTree tree index =
